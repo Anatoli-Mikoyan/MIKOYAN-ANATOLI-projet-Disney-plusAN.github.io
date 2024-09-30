@@ -8,9 +8,13 @@ body {
     font-weight: 600;
 
 }
+
 a{
     text-decoration: none;
 }
+
+    
+
 header {
     background-image: url("images/original_2.jpeg");
     background-size: cover;
@@ -317,10 +321,23 @@ main .presentation{
  background-image: url("images/original_4.jpeg");
  background-size: cover;
  background-repeat: no-repeat;
- height: 600px;
+ height: 650px;
  margin-top: 20px;
  color: white;
 }
+
+@media screen and (min-width: 1370px) {
+    /* Styles pour les écrans très grands */
+    main .presentation{
+        height: 880px;
+        margin-bottom: -50px;
+    }
+    /* Ajoutez d'autres styles spécifiques ici */
+}
+
+
+
+
 
 main .presentation .conteneur {
     padding-top: 190px;
@@ -467,13 +484,22 @@ main .tableau .container {
     background-color: #040714;
     color: white;
     margin: 0;
-    padding: 20px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
 }
+
+@media screen and (min-width: 1300px) {
+    /* Styles pour les écrans très grands */
+    main .tableau .container{
+        margin-top: -55px;
+    }
+    /* Ajoutez d'autres styles spécifiques ici */
+}
+
 
 main .tableau .container h1 {
     margin-bottom: 50px;
@@ -1048,6 +1074,7 @@ main .tableau-pour-tel .note a {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .menu-deroulant h1 {
@@ -1281,5 +1308,3 @@ footer .ligne3 {
         margin-bottom: -5px;
     }
 }
-
-
